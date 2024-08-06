@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar-nav .nav-item .nav-link {
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: #000;
+}
+/* Navbar */
+
+/* Hero */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1596402184320-417e7178b2cd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.hero-section .watermark {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+
+  .hero-section .watermark {
+    font-size: 0.7rem;
+  }
+}
+/* Hero */
+
+/* Section */
+#wisata {
+  height: auto;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#join {
+  height: 50vh;
+  background-image: url("https://images.unsplash.com/photo-1631340729644-8b8aad1e9dba?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#join .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#join h1,
+#join p,
+#join a {
+  color: white;
+}
+
+#audio {
+  height: auto;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#reservasi {
+  height: 120vh;
+  background-color: #ffffff;
+  display: flex;
+  margin-top: 100px;
+}
+
+#video {
+  height: 80vh;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* Section */
+
+/* Navbar Transparant */
+.transparent-navbar {
+  background-color: transparent !important;
+}
+
+.transparent-navbar .navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+.transparent-navbar .navbar-nav .nav-link:hover {
+  color: #f8f9fa !important;
+}
+/* Navbar Transparant */

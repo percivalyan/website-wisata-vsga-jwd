@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Pandu Tour</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <style>
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-light transparent-navbar fixed-top"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="color: white; font-weight: 400; font-size: 25px"
+          >Pandu Tour</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav ml-auto"
+            style="font-weight: 400; font-size: 18px"
+          >
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="scrollToGambar()">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="scrollToVideo()">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="scrollToWisata()">Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Jogja-Jateng-Jatim Historical Holiday</h1>
+        <p style="font-size: 18px">
+          Temukan Wisata Yogyakarta - Jawa Tengah - Jawa Timur dengan nilai
+          budaya yang luhur.
+        </p>
+        <button onclick="scrollToWisata()" class="btn btn-primary">
+          Explore Historical
+        </button>
+      </div>
+      <div class="watermark">Photo by Unsplash</div>
+      <div class="py-5"></div>
+    </section>
+
+    <section id="audio-section" style="background-color: #f8f9fa" class="py-5">
+      <div class="container">
+        <div style="text-align: center">
+          <iframe
+            width="100%"
+            height="100"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/korgpaindo/gamelan-jawa"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="gambar">
+      <div class="container py-3">
+        <!-- Gallery -->
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <img
+              src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="1"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1587651687979-77cf05d1b841?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="2"
+            />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="https://images.unsplash.com/photo-1611626382409-94f2faab9931?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="3"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1634991599324-cb0ee4942962?q=80&w=1475&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="4"
+            />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="https://images.unsplash.com/photo-1592106574625-0a404da5fba3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="5"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1548430065-53c58a6582dd?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="6"
+            />
+          </div>
+        </div>
+        <!-- Gallery -->
+      </div>
+    </section>
+
+    <section id="join">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h1 class="text-white">
+              Temukan Pesona Wisata di Jogja dan Jawa Tengah!
+            </h1>
+            <p class="lead text-white">
+              Jelajahi keindahan alam, budaya, dan sejarah yang kaya di wilayah
+              ini.
+            </p>
+            <a href="index.html" class="btn btn-primary btn-lg"
+              >Lihat Paket Liburan</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="wisata" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Tempat Wisata Impian</h2>
+        <p class="text-center">
+          Temukan keindahan yang menakjubkan di destinasi wisata ini!
+        </p>
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Gambar</th>
+              <th scope="col">Nama Tempat Wisata</th>
+              <th scope="col">Deskripsi</th>
+              <th scope="col">Reservasi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Bromo -->
+            <tr>
+              <td>
+                <a
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#gambarModal"
+                  data-gambar="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Gunung Bromo"
+                    class="img-thumbnail"
+                    width="300"
+                    height="300"
+                  />
+                </a>
+              </td>
+              <td>Gunung Bromo</td>
+              <td>
+                Terletak di daerah dingin Bromo, Gunung Bromo menawarkan
+                pengalaman yang memukau dengan panorama alamnya yang
+                menakjubkan. Dikelilingi oleh kabut yang menyelimuti dan suasana
+                yang tenang, Gunung Bromo memanjakan mata dengan keindahan yang
+                tak terlukiskan. Terletak di Provinsi Jawa Timur, Indonesia,
+                gunung berapi ini memiliki daya tarik yang tak tertandingi bagi
+                para pengunjung yang mencari petualangan dan ketenangan.
+              </td>
+              <td>
+                <a href="reservasi_bromo.html" class="btn btn-primary"
+                  >Reservasi</a
+                >
+              </td>
+            </tr>
+            <!-- Lawang Sewu -->
+            <tr>
+              <td>
+                <a
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#gambarModal"
+                  data-gambar="https://images.unsplash.com/photo-1634991599324-cb0ee4942962?q=80&w=1475&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1634991599324-cb0ee4942962?q=80&w=1475&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="..."
+                    class="img-thumbnail"
+                    width="300"
+                    height="300"
+                  />
+                </a>
+              </td>
+              <td>Lawang Sewu Semarang</td>
+              <td>
+                Lawang Sewu adalah sebuah bangunan bersejarah yang terletak di
+                Semarang, Jawa Tengah, Indonesia. Bangunan ini memiliki gaya
+                arsitektur klasik yang megah dan indah, mewakili kejayaan masa
+                lalu Semarang. Terkenal sebagai salah satu ikon kota Semarang,
+                Lawang Sewu memiliki daya tarik tersendiri bagi pengunjung yang
+                tertarik dengan sejarah dan arsitektur.
+              </td>
+              <td>
+                <a href="reservasi_lawang_sewu.html" class="btn btn-primary"
+                  >Reservasi</a
+                >
+              </td>
+            </tr>
+            <!-- Borobudur -->
+            <tr>
+              <td>
+                <a
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#gambarModal"
+                  data-gambar="https://images.unsplash.com/photo-1631340729644-8b8aad1e9dba?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1631340729644-8b8aad1e9dba?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="..."
+                    class="img-thumbnail"
+                    width="300"
+                    height="300"
+                  />
+                </a>
+              </td>
+              <td>Candi Borobudur</td>
+              <td>
+                Candi Borobudur adalah sebuah situs bersejarah yang terletak di
+                Magelang, Jawa Tengah, Indonesia. Situs ini merupakan salah satu
+                peninggalan budaya terbesar dari peradaban Hindu-Buddha di
+                Indonesia, yang dibangun pada abad ke-9 Masehi. Dikenal sebagai
+                candi terbesar di dunia, Borobudur adalah sebuah monumen yang
+                megah dan indah, serta menjadi salah satu situs warisan dunia
+                UNESCO.
+              </td>
+              <td>
+                <a href="reservasi_borobudur.html" class="btn btn-primary"
+                  >Reservasi</a
+                >
+              </td>
+            </tr>
+            <!-- Prambanan -->
+            <tr>
+              <td>
+                <a
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#gambarModal"
+                  data-gambar="https://images.unsplash.com/photo-1621869606578-1561708a7e09?q=80&w=1407&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1621869606578-1561708a7e09?q=80&w=1407&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="..."
+                    class="img-thumbnail"
+                    width="300"
+                    height="300"
+                  />
+                </a>
+              </td>
+              <td>Candi Prambanan</td>
+              <td>
+                Candi Prambanan adalah sebuah kompleks candi Hindu yang terletak
+                di Klaten, Jawa Tengah, Indonesia. Dibangun pada abad ke-9
+                Masehi oleh wangsa Sanjaya, candi ini merupakan salah satu
+                peninggalan arsitektur dan kebudayaan Hindu terbesar di
+                Indonesia. Candi Prambanan terdiri dari beberapa candi utama
+                yang didedikasikan untuk Trimurti, yaitu Brahma, Vishnu, dan
+                Shiva, bersama dengan tiga candi utama yang lebih kecil yang
+                mengelilinginya, serta candi-candi kecil lainnya.
+              </td>
+              <td>
+                <a href="reservasi_prambanan.html" class="btn btn-primary"
+                  >Reservasi</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <a href="index.html" class="btn btn-primary">Lihat Lainnya</a>
+      </div>
+
+      <div
+        class="modal fade"
+        id="gambarModal"
+        tabindex="-1"
+        aria-labelledby="gambarModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="gambarModalLabel">Preview Gambar</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img
+                id="gambarPreview"
+                src=""
+                class="img-fluid"
+                alt="Preview Gambar"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="paket-wisata" class="py-5" style="background-color: #f8f9fa">
+      <div class="container">
+        <h2 class="text-center">Paket Wisata</h2>
+        <p class="text-center">
+          Pilih paket wisata yang sesuai dengan kebutuhan Anda!
+        </p>
+
+        <div class="container my-5">
+          <div class="row">
+            <!-- Paket Ramah -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img
+                  src="https://images.unsplash.com/flagged/photo-1575984586335-40a7a7713be8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-top"
+                  alt="Paket Ramah"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Paket Ramah Bersama Keluarga Tercinta
+                  </h5>
+                  <p class="card-text">
+                    Paket wisata yang dirancang khusus untuk keluarga dengan
+                    anak-anak. Nikmati aktivitas yang menyenangkan dan fasilitas
+                    ramah keluarga di destinasi pilihan kami.
+                  </p>
+                  <p style="color: grey">Posted on 04 February 2024</p>
+                  <a href="paket_ramah.html" class="btn btn-primary"
+                    >Baca Selengkapnya</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Paket Bersama -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img
+                  src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-top"
+                  alt="Paket Bersama"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Paket Wisata Bersama Teman-Teman atau Rekan Kerja
+                  </h5>
+                  <p class="card-text">
+                    Ideal untuk grup teman atau rekan kerja. Paket ini
+                    menawarkan pengalaman yang mengesankan dengan berbagai
+                    aktivitas grup dan akomodasi yang nyaman.
+                  </p>
+                  <p style="color: grey">Posted on 12 February 2024</p>
+                  <a href="paket_bersama.html" class="btn btn-primary"
+                    >Baca Selengkapnya</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Paket Individual -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img
+                  src="https://images.unsplash.com/photo-1685328403755-de1d57e12e63?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-top"
+                  alt="Paket Individual"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Paket Individual untuk Menikmati Waktu Sendiri
+                  </h5>
+                  <p class="card-text">
+                    Paket eksklusif yang dirancang untuk pengalaman pribadi.
+                    Cocok untuk solo traveler yang ingin menikmati liburan
+                    dengan kebebasan dan privasi penuh.
+                  </p>
+                  <p style="color: grey">Updated on 19 February 2024</p>
+                  <a href="paket_individual.html" class="btn btn-primary"
+                    >Baca Selengkapnya</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="paket_wisata_list.html" class="btn btn-primary"
+            >Lihat Semua Paket Wisata</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="video">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center">
+            <h2 class="section-heading py-1">Video Promosi</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/ZEVFHKyovic"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Alamat</h5>
+            <p>Jl. Pandu No. 123, Yogyakarta, Indonesia</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Kontak</h5>
+            <p>Email: yoryan8888@gmail.com<br />Telepon: +62 813 9155 5968</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Ikuti Kami</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"
+                  ><i class="fab fa-facebook-f"></i> Pandu Adventure</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> pandu_adventure</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> pandu_adventure</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col">
+            <p class="text-muted text-center">
+              © 2024 Pandu Tour. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      function scrollToWisata() {
+        const sectionWisata = document.getElementById("join");
+        sectionWisata.scrollIntoView({ behavior: "smooth" });
+      }
+
+      function scrollToGambar() {
+        const sectionGambar = document.getElementById("gambar");
+        sectionGambar.scrollIntoView({ behavior: "smooth" });
+      }
+
+      function scrollToVideo() {
+        const sectionVideo = document.getElementById("video");
+        sectionVideo.scrollIntoView({ behavior: "smooth" });
+      }
+
+      // Mengatur tautan gambar modal ketika gambar diklik
+      $(document).ready(function () {
+        $("#gambarModal").on("show.bs.modal", function (event) {
+          var gambar = $(event.relatedTarget).data("gambar");
+          $("#gambarPreview").attr("src", gambar);
+        });
+      });
+
+      // Navbar
+      var navbar = document.getElementById("navbar");
+      var prevScrollpos = window.pageYOffset;
+
+      // Fungsi
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          navbar.style.top = "0";
+        } else {
+          navbar.style.top = "-100px"; // Atur Scroll
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+  </body>
+</html>
